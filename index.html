@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <img src="images/logoMacrame.png" id="logo">
+        <img id="imagen-logo" src="images/logoMacrame.png" id="logo">
         <h1>Creaciones</h1>
         <h2>Macramé</h2>
     </header>
@@ -24,7 +24,7 @@
         </div>
     </nav>
     <main>
-        <img src="images/home.png">
+        <img id="imagen-quees" src="images/home.png" alt="Imagen de fondo de la pagina web">
         <section id="seccion-quees">
             <h3> Que es?</h3>
             <p>El macramé es el arte de tejer y trenzar hilos con las manos a través de nudos, creando piezas únicas y
@@ -32,22 +32,47 @@
                 estrés, estimula la creatividad y mejora la concentración y la paciencia. Practicar macramé también
                 brinda una gran satisfacción personal, fortaleciendo la autoestima y permitiéndote conectar con el arte
                 hecho a mano</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BGBIkYClWUM?si=bZiNTW5msfLOH9Ds"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <section id="seccion-proyecto">
             <h3>Proyectos</h3>
             <div>
+                <label for="search">Buscar</label>
+                <input type="text" name="search" id="search" placeholder="Buscar..." />
+                <button type="button">Buscar</button>
+            </div>
+            <div>
                 <div>
-                    <img src="images/almohadones.jpg">
+                    <img id="imagen-proyetosAlomohadones" src="images/almohadones.jpg"
+                        alt="Imagen de macrame de almohadones">
                     <p>Probando</p>
                 </div>
                 <div>
-                    <img src="images/espejo.jpg">
+                    <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
                     <p>Probando 2</p>
                 </div>
             </div>
         </section>
         <section id="seccion-contacto">
             <h3>Contacto</h3>
+            <img id="imagen-contacto" src="images/espejoYUTE.jpg" alt="Imagen de macrame de un espejo con yute">
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre" />
+                <br>
+                <label for="email">Email</label>
+                <input type="email" size="30" name="email" id="email" />
+                <br>
+                <label for="telefono">Teléfono</label>
+                <input type="number" name="telefono" id="telefono" />
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <textarea placeholder="Escriba su mensaje"></textarea>
+            </form>
+            <button type="button">Enviar</button>
         </section>
     </main>
 </body>
