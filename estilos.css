@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
+body {
+    background-image: url("images/queEs.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .grid-container-menu {
     display: grid;
     grid-template-columns: auto auto;
     min-height: 50px;
     max-height: 50px;
+    background-color: rgb(250, 250, 250);
 }
 
 #imagen-logo {
@@ -34,6 +42,7 @@ h2 {
 .menu>a {
     text-decoration: none;
     padding-right: 15px;
+
 }
 
 #home {
@@ -53,4 +62,31 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 48;
+    text-align: center;
+}
+
+
+.seccion-quees>h3 {
+    margin-bottom: 10px;
+}
+
+.seccion-quees>p {
+    text-align: justify;
+    border: 1px solid rgb(133, 37, 114);
+    margin: 10px 40px;
+    padding: 30px;
+    border-radius: 10% 20%;
+
+}
+
+p {
+    font-size: 20px;
+}
+
+#video {
+    display: block;
+    /* Asegura que el iframe se comporte como un bloque */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(0, 0, 0, 0.4);
 }
