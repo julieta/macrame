@@ -38,10 +38,10 @@ h2 {
 }
 
 #home {
-    background-position: center;
     /* Centra la imagen */
-    background-repeat: no-repeat;
+    background-position: center;
     /* Evita repeticiones */
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     margin: 0;
