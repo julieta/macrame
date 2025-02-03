@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="estilos.css" type="text/css" />
     <link rel="shortcut icon" href="images/logoMacrame.jpg" type="image" />
     <script type="text/JavaScript" src="funciones.js"></script>
+    <script type="text/JavaScript" src="proyectos.js"></script>
 </head>
 
-<body>
+<body onload="cargarProyectos()">
     <button type="button" onclick="hola()">Saludar</button>
     <div class="grid-container-menu">
         <header class="logo">
@@ -47,31 +48,33 @@
                 <input type="text" name="search" id="search" placeholder="Buscar..." />
                 <button type="button">Buscar</button>
             </div>
+            <dialog id="proyectos-modal"></dialog>
             <div class="grid-container-proyectos">
-                <div>
+                <!--
+                <div class="proyecto">
                     <img id="imagen-proyetosEspejo" src="images/espejo.jpg" alt="Imagen de macrame de almohadones">
                     <p id="texto-en-imagenes">Probando1</p>
                 </div>
-                <div>
+                <div class="proyecto">
                     <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
                     <p id="texto-en-imagenes">Probando 2</p>
                 </div>
-                <div>
+                <div class="proyecto">
                     <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
                     <p id="texto-en-imagenes">Probando 3</p>
                 </div>
-                <div>
+                <div class="proyecto">
                     <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
                     <p id="texto-en-imagenes">Probando 4</p>
                 </div>
-                <div>
+                <div class="proyecto">
                     <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
                     <p id="texto-en-imagenes">Probando 5</p>
                 </div>
-                <div>
+                <div class="proyecto">
                     <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
                     <p id="texto-en-imagenes">Probando 6</p>
-                </div>
+                </div>-->
             </div>
         </section>
         <section id="seccion-contacto">

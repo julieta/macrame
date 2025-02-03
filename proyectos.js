@@ -1,4 +1,4 @@
-[
+const proyectos = [
     {
         "proyecto": "Almohadones",
         "descripcion": "Hilo de algodón. Color crudo",
@@ -43,5 +43,5 @@
         "proyecto": "Tapiz",
         "descripcion": "Realizado en Yute. Color marrón",
         "imagen": "tapizYUTE.jpg"
-    },
+    }
 ]
