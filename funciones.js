@@ -6,7 +6,7 @@ function cargarProyectos() {
 
     proyectos.forEach((element, $id) => {
         contenido += `<div class="proyectos" onClick="displayModal(${$id})">
-            <img src="images/${element.imagen}" alt="${element.proyecto}" />
+            <img src="images/${element.imagen}" alt="${element.proyecto}" width="200" height="270" />
             <h5>${element.proyecto}</h5>
           </div>`;;
 
@@ -28,3 +28,23 @@ function displayModal(numberCert) {
 function closeModal() {
     document.getElementById("proyectos-modal").style.display = "none";
 }
+
+/**Buscador */
+function buscarProyecto() {
+    let input = document.getElementById("search").value.toLowerCase();
+    console.log(input)
+    let proyectos = document.querySelectorAll(".proyecto");
+
+    proyectos.forEach(proyecto => {
+        let nombre = proyecto.getAttribute("proyectos").toLowerCase();
+
+        if (nombre.includes(input)) {
+            proyecto.style.display = "block"; // Muestra el proyecto si coincide
+        } else {
+            proyecto.style.display = "none"; // Oculta si no coincide
+        }
+    });
+}
+
+// También detecta búsqueda al escribir en el input
+document.getElementById("search").addEventListener("keyup", buscarProyecto);

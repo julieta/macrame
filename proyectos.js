@@ -27,7 +27,7 @@ const proyectos = [
     {
         "proyecto": "Portamacetas",
         "descripcion": "Realizado en hilo de algodón. Color crudo",
-        "imagen": "lamparaPAPELkraft.jpg"
+        "imagen": "portamaceta.png"
     },
     {
         "proyecto": "Portavasos",

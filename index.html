@@ -13,7 +13,6 @@
 </head>
 
 <body onload="cargarProyectos()">
-    <button type="button" onclick="hola()">Saludar</button>
     <div class="grid-container-menu">
         <header class="logo">
             <img id="imagen-logo" src="images/logoMacrame.jpg" alt="Imagen del logo">
@@ -27,7 +26,9 @@
         </nav>
     </div>
     <main>
-        <img id="home" src="images/fondoHome2.png" alt="Imagen de fondo de la pagina web">
+        <section class="home">
+            <img id="home" src="images/fondoHome2.png" alt="Imagen de fondo de la pagina web">
+        </section>
         <section class="seccion-quees">
             <h3>El Arte de Crear</h3>
             <p>El macramé es el arte de tejer y trenzar hilos con las manos a través de nudos, creando piezas únicas y
@@ -46,7 +47,7 @@
             <div class="search">
                 <label for="search">Buscar</label>
                 <input type="text" name="search" id="search" placeholder="Buscar..." />
-                <button type="button">Buscar</button>
+                <button type="button" onclick="buscarProyecto()">Buscar</button>
             </div>
             <dialog id="proyectos-modal"></dialog>
             <div class="grid-container-proyectos">
@@ -79,21 +80,33 @@
         </section>
         <section id="seccion-contacto">
             <h3>Contacto</h3>
-            <img id="imagen-contacto" src="images/espejoYUTE.jpg" alt="Imagen de macrame de un espejo con yute">
-            <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre" />
-                <br>
-                <label for="email">Email</label>
-                <input type="email" size="30" name="email" id="email" />
-                <br>
-                <label for="telefono">Teléfono</label>
-                <input type="number" name="telefono" id="telefono" />
-                <br>
-                <label for="mensaje">Mensaje</label>
-                <textarea placeholder="Escriba su mensaje"></textarea>
-            </form>
-            <button type="button">Enviar</button>
+            <div class="grid-container-contacto">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img src="images/fondoHome.png" id="slider-1" alt="carrousel" class="image" />
+                        <img src="images/fondoHome2.png" id="slider-2" alt="carrousel" class="image" />
+                        <img src="images/fondoPantalla.png" id="slider-3" alt="carrousel" class="image" />
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slider-1" class="slider-button"></a>
+                        <a href="#slider-2" class="slider-button"></a>
+                        <a href="#slider-3" class="slider-button"></a>
+                    </div>
+                </div>
+                <div>
+                    <form class="formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre" />
+                        <label for="email">Email</label>
+                        <input type="email" size="30" name="email" id="email" />
+                        <label for="telefono">Teléfono</label>
+                        <input type="number" name="telefono" id="telefono" />
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="textmensaje" placeholder="Escriba su mensaje"></textarea>
+                    </form>
+                    <button id="enviar" type="button">Enviar</button>
+                </div>
+            </div>
         </section>
     </main>
 </body>
