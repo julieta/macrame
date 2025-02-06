@@ -95,9 +95,22 @@ p {
 
 .grid-container-proyectos {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+
     gap: 10px;
     object-fit: cover;
+}
+
+@media (width <=600px) {
+    .grid-container-proyectos {
+        grid-template-columns: auto;
+    }
+}
+
+
+@media (width >=601px) {
+    .grid-container-proyectos {
+        grid-template-columns: auto auto auto auto;
+    }
 }
 
 .grid-container-proyectos>div {
