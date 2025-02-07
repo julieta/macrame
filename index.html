@@ -26,7 +26,6 @@
             <a href="#seccion-proyecto">Proyecto</a>
             <a href="#seccion-contacto">Contacto</a>
         </nav>
-        <button class="menu-btn">&#9776;</button>
     </div>
     <main>
         <section class="home">
@@ -49,37 +48,11 @@
             <h3>Proyectos</h3>
             <div class="search">
                 <label for="search">Buscar</label>
-                <input type="text" name="search" id="search" placeholder="Buscar..." />
-                <button type="button" onclick="buscarProyecto()">Buscar</button>
+                <input type="text" name="search" id="search" placeholder="Buscar..."
+                    onkeypress="buscarProyecto(this.value)" />
             </div>
             <dialog id="proyectos-modal"></dialog>
-            <div class="grid-container-proyectos">
-                <!--
-                <div class="proyecto">
-                    <img id="imagen-proyetosEspejo" src="images/espejo.jpg" alt="Imagen de macrame de almohadones">
-                    <p id="texto-en-imagenes">Probando1</p>
-                </div>
-                <div class="proyecto">
-                    <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
-                    <p id="texto-en-imagenes">Probando 2</p>
-                </div>
-                <div class="proyecto">
-                    <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
-                    <p id="texto-en-imagenes">Probando 3</p>
-                </div>
-                <div class="proyecto">
-                    <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
-                    <p id="texto-en-imagenes">Probando 4</p>
-                </div>
-                <div class="proyecto">
-                    <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
-                    <p id="texto-en-imagenes">Probando 5</p>
-                </div>
-                <div class="proyecto">
-                    <img id="imagen-proyetosEspejo" src="images/espejo.jpg">
-                    <p id="texto-en-imagenes">Probando 6</p>
-                </div>-->
-            </div>
+            <div class="grid-container-proyectos"></div>
         </section>
         <section id="seccion-contacto">
             <h3>Contacto</h3>
